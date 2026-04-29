@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELONIC</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    body{
+        background-color: #2D333C;
+        display: flex;
+        flex-direction: column;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #vel{
+        height: 50px;
+        width: 100%;
+        background-color: #313A46;
+        border-bottom: #AAB8C5 0.5px solid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #vel2{
+        height: 40px;
+        width: 100%;
+        background-color: #313A46;
+        display: flex;
+        flex-direction: row;
+    }
+    #horizontal{
+        height: 350px;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hhh{
+        height: 50%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    #horizontal1{
+        height: 100%;
+        width: 50%;
+        background-color: #F24F7C;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #horizontal2{
+        height: 100%;
+        width: 50%;
+        background-color: #716CB0;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #horizontal3{
+        height: 100%;
+        width: 50%;
+        background-color: #33B0E0;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #horizontal4{
+        height: 100%;
+        width: 50%;
+        background-color: #3BC0C3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #htext{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 55%;
+    }
+    #htext1{
+        width: 10%;
+        height: 100%;
+        margin-left: 30px;
+    }
+    #htext2{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-left: 100px;
+    }
+    #p1{
+        color: #AAB8C5;
+        text-align: center;
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .p2{
+        margin-left: 12.5px;
+        margin-top: 9px;
+        color: #AAB8C5;
+        font-size: 12px;
+    }
+    #weeklysalesreport{
+        height: 450px;
+        width: 100%;
+        margin-top: 15px;
+        gap: 12.5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #wsr1{
+        height: 100%;
+        width: 62.5%;
+        background-color: #1A2942;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #wsr2{
+        height: 100%;
+        width: 32.5%;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    #wsr2_1{
+        height: 75%;
+        width: 100%;
+        background-color: #1A2942;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #wsr2_2{
+        height: 25%;
+        width: 100%;
+        background-color: #1A2942;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #chatproject{
+        width: 100%;
+        height: 475px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 15px;
+        border-bottom: #AAB8C5 1px solid;
+    }
+    #chat{
+        width: 34%;
+        height: 95%;
+        background-color: #1A2942;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #project{
+        width: 61%;
+        height: 95%;
+        background-color: #1A2942;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #last{
+        width: 100%;
+        height: 35px;
+    }
+    #img1{
+        height: 180px;
+        width: 250px;
+        margin-left: -25px;
+        margin-top: 15px;
+    }
+    #searchbar{
+        height: 35px;
+        width: 200px;
+        border-radius: 20px;
+        background-color: #1A2942;
+        margin-left: -35px;
+        display: flex;
+        flex-direction: row;
+        border: #AAB8C5 1px solid;
+    }
+    #search{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    #bar{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    #p3{
+        margin-left: 10px;
+        font-size: 15px;
+        color: #AAB8C5;
+    }
+    #img2{
+        height: 22px;
+        margin-left: 65px;
+    }
+    #img3{
+        height: 12.5px;
+        width: 22.5px;
+        margin-top: -3px;
+    }
+    #vel1right{
+        width: 35%;
+        height: 100%;
+        margin-left: 450px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #p4{
+        color: #AAB8C5;
+        font-size: 12px;
+        margin-left: 4.5px;
+        margin-top: -3px;
+    }
+    #p5{
+        color: #AAB8C5;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    #img4{
+        height: 15px;
+        margin-top: -3px;
+    }
+    #img5{
+        height: 35px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    #img6{
+        height: 20px;
+        margin-bottom: 5px;
+        margin-left: 18px;
+    }
+    #img7{
+        height: 20px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+    #img8{
+        height: 20px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+    #photo{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin-left: 25px;
+        display: flex;
+    }
+    #img9{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    #img10{
+        height: 15px;
+        margin-left: 2px;
+        margin-top: 1px;
+    }
+    .vel2_1{
+        height: 100%;
+        width: 10%;
+        margin-left: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .p6{
+        color: #AAB8C5;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+    .img11{
+        height: 18px;
+        margin-left: 1px;
+
+    }
+    #img12{
+        height: 15px;
+        margin-left: 10px;
+        margin-top: 2.5px;
+    }
+    .p7{
+        margin-top: 25px;
+        margin-left: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+    }
+    .p8{
+        margin-top: 11px;
+        margin-left: 20px;
+        font-size: 27px;
+        font-weight: bold;
+        color: white;
+    }
+    .p9{
+        font-size: 11px;
+        color: white;
+        background-color: rgba(225, 225, 225, 0.578);
+        border-radius: 5px;
+        height: 15px;
+        text-align: center;
+        margin-left: 1.5px;
+    }
+    .p10{
+        margin-left: 10px;
+        font-size: 11px;
+        color: white;
+    }
+    
+    
+    .slm{
+        height: 15px;
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    #velbox{
+        margin-left: -9px;
+    }
+    #velspeed{
+        margin-left: 30px;
+    }
+    #velpage{
+        margin-left: -2px;
+    }
+    #weeklysalestext{
+        height: 10%;
+        width: 95%;
+        display: flex;
+    }
+    #weeklytext{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #weeklyicon{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    #projecttext1{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #projecticon{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .p11{
+        color: #AAB8C5;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .img13{
+        height: 20px;
+        margin-left: 3px;
+    }
+    #graphchat{
+        height: 65%;
+        width: 95%;
+        background-color: aliceblue;
+    }
+    #projecttext{
+        height: 10%;
+        width: 95%;
+        display: flex;
+    }
+    #projectstat{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectstat1{
+        height: 12.3%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: #AAB8C5 1px solid;
+    }
+    .number{
+        height: 100%;
+        width: 5%;
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    .project_name{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    .start_date{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    .due_date{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    .status{
+        height: 100%;
+        width: 13%;
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    .assign{
+        height: 100%;
+        width: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .p12{
+        color: #AAB8C5;
+        font-weight: bold;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    #chattop{
+        height: 10%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+    #chattop1{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+    #chattop2{
+        height: 100%;
+        width: 20%;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+    }
+    #geneva1{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        margin-top: 5px;
+    }
+    #geneva2{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        margin-top: 10px;
+    }
+    .dp{
+        height: 50%;
+        width: 40px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    .dpthomp{
+        height: 40%;
+        width: 40px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    #chatbox1{
+        width: 70px;
+        height: 90%;
+        background-color: #AAB8C5;
+        margin-left: 10px;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #chatbox1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #AAB8C5;
+    }
+    #chatbox3{
+        width: 190px;
+        height: 90%;
+        background-color: #AAB8C5;
+        margin-left: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #chatbox3::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #AAB8C5;
+    }
+
+    #containpic1{
+        margin-left: 20px;
+    }
+    .p13{
+        font-size: 10px;
+        font-weight: bold;
+        color: #AAB8C5;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+    #p14{
+        color: #e9eaec;
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+
+    }
+    .p16{
+        color: #e9eaec;
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        margin-right: 10px;
+
+    }
+    #p15{
+        color: #e9eaec;
+        font-size: 15px;
+        margin-top: 7px;
+    }
+    .p17{
+        color: #e9eaec;
+        font-size: 15px;
+        margin-top: 7px;
+        margin-right: 9px;
+    }
+    #p18{
+        color: #e9eaec;
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    #p19{
+        color: #e9eaec;
+        font-size: 15px;
+        margin-top: 7px;
+        margin-left: 10px
+    }
+    #thompson1{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 3px;
+    }
+    #thompson2{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -5px;
+    }
+    #chatbox2{
+        height: 90%;
+        width: 250px;
+        background-color: #3BC0C3;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 5px;
+        border-radius: 5px;
+        position: relative;
+    }
+    #chatbox2::after{
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: -8px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #3BC0C3;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    #chatbox4{
+        height: 58%;
+        width: 150px;
+        background-color: #3BC0C3;
+        margin-left: 180px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 5px;
+        border-radius: 5px;
+        position: relative;
+        margin-top: -20px;
+    }
+    #chatbox4::after{
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: -8px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #3BC0C3;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    #containpic2{
+        margin-left: 10px;
+        height: 100%;
+        width: 50px;
+        
+    }   
+    #sendmessagecontainer{
+        width: 100%;
+        height: 35px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+    #message{
+        height: 100%;
+        width: 65%;
+        border: #AAB8C5 solid 1px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+
+    }
+    #send{
+        height: 100%;
+        width: 15%;
+        background-color: red;
+        margin-left: 5px;
+        border: #AAB8C5 1px solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #p20{
+        font-size: 12px;
+        color: white;
+    }
+    #p21{
+        font-size: 13px;
+        color: #AAB8C5;
+        margin-left: 10px;
+    }
+    #wsr2_2left{
+        height: 90%;
+        width: 45%;
+    }
+    #wsr2_2right{
+        height: 90%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #p22{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 18px;
+        color: #AAB8C5;
+    }
+    #p23{
+        font-size: 10px;
+        margin-top: 8px;
+        color: #AAB8C5;
+    }
+    #pie-chart{
+        height: 50%;
+        width: 30%;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-bottom: 15px;
+    }
+    #img14{
+        height: 95%;
+        width: 95%;
+    }
+    #wsr_1icon{
+        height: 10%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #wsr2-1icon{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    #wsr2_1text{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="vel">
+        <img id="img1" src="vel.png" alt="">
+        <div id="searchbar">
+            <div id="search"><p id="p3">Search...</p></div>
+            <div id="bar"><img id="img2" src="searchbar.png" alt=""></div>
+        </div>
+        <div id="vel1right">
+            <img id="img3" src="usa.png" alt="">
+            <p id="p4">English</p>
+            <img id="img4" src="arrowdown.png" alt="">
+            <img id="img5" src="mailicon.png" alt="">
+            <img id="img6" src="notification.png" alt="">
+            <img id="img7" src="settings.png" alt="">
+            <img id="img8" src="sunny.png" alt="">
+            <div id="photo"><img id="img9" src="woman.jpg" alt=""></div>
+            <p id="p5">Thomson</p>
+            <img id="img10" src="arrowdown.png" alt="">
+        </div>
+        
+    </div>
+
+
+    <div id="vel2">
+        <div class="vel2_1" id="velspeed">
+            <img class="img11" src="speedo.png" alt="">
+            <p class="p6">Dashboards</p>
+        </div>
+        <div class="vel2_1" id="velpage">
+            <img class="img11" src="pages.png" alt="">
+            <p class="p6">Pages</p>
+            <img id="img12" src="arrowdown.png" alt="">
+        </div>
+        <div class="vel2_1" id="velbox">
+            <img class="img11" src="servicetoolbox.png" alt="">
+            <p class="p6">Components</p>
+            <img id="img12" src="arrowdown.png" alt="">
+        </div>
+        <div class="vel2_1" >
+            <img class="img11" src="grid.png" alt="">
+            <p class="p6">Layouts</p>
+            <img id="img12" src="arrowdown.png" alt="">
+        </div>
+    </div>
+
+
+    <div id="horizontal">
+        <div id="htext">
+            <div id="htext1">
+                <p id="p1">Horizontal</p>
+            </div>
+            <div id="htext2">
+                <p class="p2">Velonic</p>
+                <p class="p2">></p>
+                <p class="p2">Layout</p>
+                <p class="p2">></p>
+                <p class="p2">Horizontal</p>
+            </div>
+        </div>
+        <div class="hhh">
+            <div id="horizontal1">
+                <p class="p7">DAILY VISITS</p>
+                <p class="p8">8,652</p>
+                <div class="slm">
+                <p class="p9">2.97%</p>
+                <p class="p10">Since last month</p>
+                </div>
+                
+            </div>
+            <div id="horizontal2">
+                <p class="p7">REVENUE</p>
+                <p class="p8">$9,254.62</p>
+                <div class="slm">
+                <p class="p9">18.25%</p>
+                <p class="p10">Since last month</p>
+                </div>
+            </div>
+        </div>
+        <div class="hhh">
+            <div id="horizontal3">
+                <p class="p7">ORDERS</p>
+                <p class="p8">753</p>
+                <div class="slm">
+                <p class="p9">-5.75%</p>
+                <p class="p10">Since last month</p>
+                </div>
+            </div>
+            <div id="horizontal4">
+                <p class="p7">USERS</p>
+                <p class="p8">63,154</p>
+                <div class="slm">
+                <p class="p9">8.21%</p>
+                <p class="p10">Since last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="weeklysalesreport">
+        <div id="wsr1">
+            <div id="weeklysalestext">
+                <div id="weeklytext">
+                    <p class="p11">Weekly Sales Report</p>
+                </div>
+                <div id="weeklyicon">
+                    <img class="img13" src="cached.png" alt="">
+                    <img class="img13" src="line.png" alt="">
+                    <img class="img13" src="close.png" alt="">
+                </div>
+            </div>
+            <div id="graphchat">
+                <img src="" alt="">
+            </div>
+            <div></div>
+        </div>
+        <div id="wsr2">
+            <div id="wsr2_1">
+                <div id="wsr_1icon">
+                    <div id="wsr2_1text">
+                        <p class="p11">Yearly Sales Report</p>
+                    </div>
+                    <div id="wsr2-1icon">
+                    <img class="img13" src="cached.png" alt="">
+                    <img class="img13" src="line.png" alt="">
+                    <img class="img13" src="close.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="wsr2_2">
+                <div id="wsr2_2left">
+                    <p id="p22">69.25%</p>
+                    <p id="p23">US DOLLAR SHARE</p>
+                </div>
+                <div id="wsr2_2right">
+                    <div id="pie-chart">
+                        <img id="img14" src="pie-chart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="chatproject">
+        <div id="chat">
+            <div id="chattop">
+                <div id="chattop1">
+                    <p class="p11">Chat</p>
+                </div>
+                <div id="chattop2">
+                    <img class="img13" src="cached.png" alt="">
+                    <img class="img13" src="line.png" alt="">
+                    <img class="img13" src="close.png" alt="">
+                </div>
+            </div>
+            <div id="geneva1">
+                <div id="containpic1">
+                <div class="dp"></div>
+                <p class="p13">10:00</p>
+                </div>
+                <div id="chatbox1">
+                    <p id="p14">Geneva</p>
+                    <p id="p15">Hello!</p>
+                </div>
+            </div>
+            <div id="thompson1">
+                <div id="chatbox2">
+                    <p class="p16">Thomson</p>
+                    <p class="p17">Hi, How are you?what about our next meeting</p>
+                </div>
+                <div id="containpic2">
+                <div class="dpthomp"></div>
+                <p class="p13">10:01</p>
+                </div>
+            </div>
+            <div id="geneva2">
+                <div id="containpic1">
+                <div class="dp"></div>
+                <p class="p13">10:01</p>
+                </div>
+                <div id="chatbox3">
+                    <p id="p18">Geneva</p>
+                    <p id="p19">Yeah everything is fine</p>
+                </div>
+            </div>
+            <div id="thompson2">
+                <div id="chatbox4">
+                    <p class="p16">Thomson</p>
+                    <p class="p17">Send funds</p>
+                </div>
+                <div id="containpic2">
+                <div class="dpthomp"></div>
+                <p class="p13">10:02</p>
+                </div>
+            </div>
+            <div id="sendmessagecontainer">
+                <div id="message">
+                    <p id="p21">Enter your text</p>
+                </div>
+                <div id="send">
+                    <p id="p20">Send</p>
+                </div>
+            </div>
+        </div>
+        <div id="project">
+            <div id="projecttext">
+                <div id="projecttext1">
+                    <p class="p11">Projects</p>
+                </div>
+                <div id="projecticon">
+                    <img class="img13" src="cached.png" alt="">
+                    <img class="img13" src="line.png" alt="">
+                    <img class="img13" src="close.png" alt="">
+                </div>
+            </div>
+            <div id="projectstat">
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">#</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Project Name</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">Start Date</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">Due Date</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12"> Status</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Assign</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">1</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Admin v1</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">26/04/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: #3BC0C3; color:rgb(5, 151, 5); border-radius:5px; padding:2px; font-size:9px;">Released</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">2</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Frontend v1</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">26/04/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: #3BC0C3; color:rgb(5, 151, 5); border-radius:5px; padding:2px; font-size:9px;">Released</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">3</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Admin v1.1</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/05/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">10/05/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: rgb(164, 94, 105); color:rgba(185, 15, 15, 0.865); border-radius:5px; padding:2px; font-size:9px;">Pending</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">4</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Frontend v1.1</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">31/05/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: rgb(184, 121, 184); color: purple; border-radius:5px; padding:2px; font-size:9px;">Work in Progress</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">5</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Admin v1.3</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">31/05/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: rgb(244, 244, 234); color:rgb(248, 248, 0); border-radius:5px; padding:2px; font-size:9px;">Coming soon</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">6</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Admin v1.3</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">31/05/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: #3BC0C3; color:rgb(5, 151, 5); border-radius:5px; padding:2px; font-size:9px;">Coming soon</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+                <div class="projectstat1">
+                    <div class="number">
+                        <p class="p12">7</p>
+                    </div>
+                    <div class="project_name">
+                        <p class="p12">Velconic Admin v1.3</p>
+                    </div>
+                    <div class="start_date">
+                        <p class="p12">01/01/2015</p>
+                    </div>
+                    <div class="due_date">
+                        <p class="p12">31/05/2015</p>
+                    </div>
+                    <div class="status">
+                        <p class="p12" style="background-color: rgb(164, 94, 105); color:rgba(185, 15, 15, 0.865); border-radius:5px; padding:2px; font-size:9px;">Cool</p>
+                    </div>
+                    <div class="assign">
+                        <p class="p12">Techzaa Studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="last"></div>
+</body>
+</html>
